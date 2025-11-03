@@ -2,7 +2,11 @@
 
 ## Story
 
-Teachers at Blitz keep writing tiny calculators for their lessons, but the functions never line up: sometimes they add two numbers, sometimes many, and sometimes they need decimals. They want one consistent utility with a single method name that "just works" for common cases, choosing the right version automatically. Your job is to provide a Calculator that overloads a method so different inputs call the right implementation.
+Teachers at Blitz keep writing tiny calculators for their lessons, but the functions never line up: 
+sometimes they add two numbers, sometimes many, and sometimes they need decimals. 
+They want one consistent utility with a single method name that "just works" for common cases, 
+choosing the right version automatically. Your job is to provide a Calculator that overloads a method 
+so different inputs call the right implementation.
 
 ## Requirements
 
