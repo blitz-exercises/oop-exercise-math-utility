@@ -12,7 +12,10 @@ package nl.blitz.oop.math;
 public class Demo {
 
     public static void main(String[] args) {
-        throw new UnsupportedOperationException("TODO: implement demo to exercise all add overloads");
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.add(1, 2));
+        System.out.println(calculator.add(1.1, 2.2));
+        System.out.println(calculator.add(1,2,3,4,5,6,7,8,9,10));
     }
 }
 
