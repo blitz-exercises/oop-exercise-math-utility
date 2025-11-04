@@ -21,8 +21,10 @@ public class Demo {
         int sumVarargs = calculator.add(2, 5, 3, 6);
         System.out.println("The sum of varargs is: " + sumVarargs);
 
+        // Demonstrates that calling add() with no arguments throws IllegalArgumentException:
         int sumVarargsUncorrect = calculator.add();
         System.out.println("The sum of varargs is: " + sumVarargsUncorrect);
+
     }
 }
 

@@ -30,12 +30,12 @@ public class Calculator {
      */
     public int add(int... nums) {
         if(nums.length == 0){
-            throw new IllegalArgumentException("At least one numer is required.");
+            throw new IllegalArgumentException("At least one number is required.");
         }
 
         int sum = 0;
         for (int n: nums){
-            sum =+ n;
+            sum += n;
         }
         return sum;
     }
