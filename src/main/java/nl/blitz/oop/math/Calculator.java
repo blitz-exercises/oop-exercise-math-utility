@@ -14,14 +14,16 @@ public class Calculator {
      * TODO: Return the sum of two ints.
      */
     public int add(int a, int b) {
-        throw new UnsupportedOperationException("TODO: implement add(int, int)");
+        // throw new UnsupportedOperationException("TODO: implement add(int, int)");
+        return a + b;
     }
 
     /**
      * TODO: Return the sum of two doubles.
      */
     public double add(double a, double b) {
-        throw new UnsupportedOperationException("TODO: implement add(double, double)");
+        // throw new UnsupportedOperationException("TODO: implement add(double, double)");
+        return a + b;
     }
 
     /**
@@ -29,7 +31,15 @@ public class Calculator {
      * provided; if none, throw IllegalArgumentException.
      */
     public int add(int... nums) {
-        throw new UnsupportedOperationException("TODO: implement add(int...)");
+        // throw new UnsupportedOperationException("TODO: implement add(int...)");
+        int total = 0;
+        if (nums.length < 2) {
+            throw new IllegalArgumentException("Requires more than 1 number");
+        }
+        for (int i : nums) {
+            total += i;
+        }
+        return total;
     }
 }
 
