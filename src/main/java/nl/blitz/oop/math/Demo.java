@@ -10,8 +10,21 @@ package nl.blitz.oop.math;
 public class Demo {
 
     public static void main(String[] args) {
-        throw new UnsupportedOperationException(
-                "TODO: implement demo to exercise all add overloads");
+        Calculator calculator = new Calculator();
+
+        int sumInts = calculator.add(3,6);
+        System.out.println("The sum of integers is: " + sumInts);
+
+        double sumDoubles = calculator.add(4.5, 2.25);
+        System.out.println("The sum of doubles is: " + sumDoubles);
+        
+        int sumVarargs = calculator.add(2, 5, 3, 6);
+        System.out.println("The sum of varargs is: " + sumVarargs);
+
+        // Demonstrates that calling add() with no arguments throws IllegalArgumentException:
+        int sumVarargsUncorrect = calculator.add();
+        System.out.println("The sum of varargs is: " + sumVarargsUncorrect);
+
     }
 }
 
